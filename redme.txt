@@ -1,0 +1,20 @@
+web có tài khoản admin là:
+admin123-@Dmin123
+
+##xampp-Vhosts
+<VirtualHost *:80>
+   ServerName mysite.local
+   DocumentRoot "D:/htdocs/mysite"
+   
+	<Directory "D:/htdocs/mysite">
+	  
+	  Options Indexes MultiViews FollowSymLinks
+	  AllowOverride All
+	  Order allow,deny
+	  Require all granted
+	  Allow from all
+	</Directory>
+</VirtualHost>
+
+## windows/system32/drivers/etc/hosts
+127.0.0.1 mysite.local
